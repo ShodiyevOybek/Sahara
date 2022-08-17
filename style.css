@@ -1,0 +1,224 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.container {
+    padding: 0 150px;
+}
+.box {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/desert.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0 64px 0;
+}
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logotip {
+    width: 140px;
+    height: 90px;
+}
+.ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.ul li {
+    text-transform: uppercase;
+    margin-right: 70px;
+}
+.top-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.1s color linear;
+}
+.top-link:hover {
+    color: #B16B20;
+}
+.imgbox {
+    width: 200px;
+    height: 200px;
+}
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.left {
+    width: 48%;
+}
+.title {
+    font-size: 100px;
+    margin: 0;
+    color: white;
+}
+.text {
+    padding: 0 150px 0 0;
+    color: white;
+    line-height: 1.5;
+}
+.links {
+    margin-top: 50px;
+}
+.btn {
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: white;
+    padding: 12px 60px;
+    border-radius: 24px;
+    transition: 0.3s background-color linear, 0.3s color linear;
+    border: 3px solid white;
+}
+.btn:hover {
+    color: white;
+    background-color: transparent;
+}
+.right {
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.good {
+    width: 40%;
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: 0.3s transform linear;
+}
+.good:hover {
+    transform: scale(1.1);
+}
+.good-title {
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+}
+.good-text {
+    margin-left: 20px;
+    color: white;
+    line-height: 1.5;
+}
+.g1 {
+    background-image: linear-gradient(rgba( 0, 0, 0, 0.2), rgba( 0, 0, 0, 0.2)), url(img/Merzouga_sahara.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.g2 {
+    background-image: linear-gradient(rgba( 0, 0, 0, 0.2), rgba( 0, 0, 0, 0.2)), url(img/rock.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.g3 {
+    background-image: linear-gradient(rgba( 0, 0, 0, 0.2), rgba( 0, 0, 0, 0.2)), url(img/piramide.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.g4 {
+    background-image: linear-gradient(rgba( 0, 0, 0, 0.1), rgba( 0, 0, 0, 0.1)), url(img/DXchain.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media(max-width:1700px){
+    .container {
+        padding: 0 50px;
+    }
+}
+@media(max-width:1440px){
+    .good {
+        margin: 0 20px 20px 0;
+    }
+}
+@media(max-width:1300px){
+    .left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .right {
+        width: 100%;
+    }
+    .text {
+        padding: 0 200px;
+    }
+    .good {
+        margin: 0 40px 40px 0;
+    }
+}
+@media(max-width:900px){
+    .top-img {
+        width: 100%;
+        text-align: center;
+    }
+    .ul {
+        width: 100%;
+    }
+    .text {
+        padding: 0 100px;
+    }
+}
+@media(max-width:740px){
+    .good {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .text {
+        padding: 0 40px;
+    }
+}
+@media(max-width:500px){
+    .title {
+        font-size: 70px;
+    }
+    .text {
+        padding: 0;
+    }
+    .logotip {
+        margin-bottom: 20px;
+    }
+    .ul {
+        padding: 0;
+    }
+    .ul li {
+        padding: 0;
+        margin: 0 0  0 0;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container {
+        padding: 0 10px;
+    }
+}
